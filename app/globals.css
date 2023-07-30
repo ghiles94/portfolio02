@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navBar {
+  height: 10vh;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navBarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.navBarLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.navBarLinks li {
+  list-style: none;
+}
+
+.navBarLinks a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navBarContact {
+  background-color: #64ccc5;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.navBarLogo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* Accueil */
+
+.Accueil {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.AccueilContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 10vh;
+  gap: 50px;
+}
+
+.Accueil h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  color: #1b2430;
+}
+
+.Accueil p {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  color: #1b2430;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.image img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.textPrimary {
+  color: #64ccc5;
+}
+
+/* Footer */
+
+.Footer {
+  background-color: #1e2125;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  .AccueilContent {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+  }
+
+  .image img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navBarContent {
+    width: 90%;
+  }
+  .navBarLinks a {
+    font-size: 0.8rem;
+  }
+}
