@@ -31,17 +31,17 @@ function page() {
         <h1 className="projetsTitle">Projets</h1>
         <div className="projetsCards">
           {projets.map((projet) => (
-            <Link
-              href={`/projets/${encodeURIComponent(projet.id)}`}
-              className="projetsCardLink"
-            >
-              <div key={projet.id} className="projetsCard">
-                <div className="projetsCardImage">
-                  <img src={projet.image} alt={projet.titre} />
-                </div>
-                <h3>{projet.titre}</h3>
+            <div key={projet.id} className="projetsCard">
+              <div className="projetsCardImage">
+                <img src={projet.image} alt={projet.titre} />
               </div>
-            </Link>
+              <h3>{projet.titre}</h3>
+              <button className="afficherBtn">
+                <Link className="afficherLink" href={`/projets/${projet.id}`}>
+                  Afficher
+                </Link>
+              </button>
+            </div>
           ))}
         </div>
       </div>
