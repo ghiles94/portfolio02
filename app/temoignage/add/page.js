@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import { addTemoignage } from "@/app/GlobalRedux/Features/temoignage/temoignageSlice";
-
+///
 function page() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
